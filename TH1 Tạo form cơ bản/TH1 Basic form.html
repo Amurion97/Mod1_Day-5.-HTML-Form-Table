@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .main {
+            margin: 0 auto;
+            border: 1px solid black;
+            width: 60%;
+            max-width: 300px;
+            padding: 10px 20px;
+        }
+        .center{
+            text-align: center;
+        }
+        label{
+            display: block;
+        }
+        .sub{
+            margin: 10px 0;
+        }
+        .red {
+            color: red;
+        }
+        .inline {
+            display: inline-block;
+            margin: 0;
+        }
+        .phone-number{
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="" method="get">
+            <h2 class="center">Order form</h2>
+            <div class="sub">
+                <label for="item">What would you like to buy?</label>
+                <select name="item" id="item">
+                    <option value="">Choose the item</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                </select>
+            </div>
+            <div class="sub">
+                <label>How many would you like to order?</label>
+                <label for="quantity-1"><input type="radio" name="quantity" id="quantity-1" checked>1 - $10</label>
+                <label for="quantity-2"><input type="radio" name="quantity" id="quantity-2">2 - $19</label>
+                <label for="quantity-3"><input type="radio" name="quantity" id="quantity-3">3 - $25</label>
+            </div>
+            <div class="sub">
+                <label for="first-name">First Name <label class="red inline">*</label></label>
+                <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+            </div>
+            <div class="sub">
+                <label for="last-name">Last Name <label class="red inline">*</label></label>
+                <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+            </div>
+            <div class="sub">
+                <label for="email">Email </label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="sub">
+                <label for="phone-1">Phone Number </label>
+                <input type="number" name="phone-1" id="phone-1" class="phone-number">
+                <p class="inline">-</p>
+                <input type="number" name="phone-2" id="phone-2" class="phone-number">
+                <p class="inline">-</p>
+                <input type="number" name="phone-3" id="phone-3" class="phone-number">
+            </div>
+            <div class="sub">
+                <input type="submit">
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
