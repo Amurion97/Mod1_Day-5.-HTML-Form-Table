@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey form</title>
+    <style>
+        .main {
+            margin: 0 auto;
+            border: 1px solid black;
+            width: 60%;
+            max-width: 800px;
+            padding: 10px 20px;
+            font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+        table, th, td {
+            border: 0px solid black;
+            border-collapse: separate;
+            margin: 0 auto;
+            border-spacing: 5px;
+        }
+        table {
+            width: 90%;
+        }
+        .center{
+            text-align: center;
+        }
+        label{
+            display: block;
+        }
+        .sub{
+            margin: 10px 0;
+        }
+        .red {
+            color: red;
+        }
+        .inline {
+            display: inline-block;
+            margin: 0;
+        }
+        .phone-number{
+            width: 40px;
+        }
+        .name {
+            width: 30%;
+        }
+        .value {
+            width: 20%;
+        }
+        .small {
+            font-size: 70%;
+
+        }
+        .no-margin{
+            margin: 0;
+        }
+        .right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="http://demo.codegym.vn/6/registration_form/register.php" method="post">
+            <h2 class="center">Sở thích học viên</h2>
+            <table>
+                <tr class="sub">
+                    <td class="name right">
+                        <label for="first-name">Họ và tên<label class="red inline">*</label>:</label>
+                    </td>
+                    <td colspan="3">
+                        <input type="text" name="first-name" id="first-name" placeholder="Full Name" required>
+                    </td>
+                </tr>
+                <tr class="sub">
+                    <td class="name right">
+                        <label for="email">Email<label class="red inline">*</label>:</label>
+                    </td>
+                    <td colspan="3">
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </td>
+                </tr>
+                <tr class="sub">
+                    <td class="name right">
+                        <label for="class">Lớp:</label>
+                    </td>
+                    <td colspan="3">
+                        <select name="class" id="class">
+                            <option value="">Your class</option>
+                            <option value="C0722">C0722</option>
+                            <option value="C0922">C0822</option>
+                            <option value="C0922">C0922</option>
+                            <option value="C1022">C1022</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="sub">
+                    <td class="name right">
+                        <label>Sở thích<label class="red inline">*</label>:</label>
+                    </td>
+                    <td>
+                        <label for="sport"><input type="checkbox" name="favorite" value="sport" id="sport">Thể thao</label>
+                    </td>
+                    <td>
+                        <label for="music"><input type="checkbox" name="favorite" value="music" id="music">Âm nhạc</label>
+                    </td>
+                    <td>
+                        <label for="travel"><input type="checkbox" name="favorite" value="travel" id="travel">Du lịch</label>
+                    </td>
+                </tr>
+                <tr class="sub">
+                    <td class="name right">
+                    </td>
+                    <td>
+                        <label for="reading"><input type="checkbox" name="favorite" value="reading" id="reading">Đọc sách</label>
+                    </td>
+                </tr>
+                <tr class="sub">
+                    <td class="name right">
+                        <label for="reason">Lí do yêu thích:</label>
+                    </td>
+                    <td colspan="3">
+                        <textarea rows="3" cols="40" name="reason" id="reason"></textarea>
+                    </td>
+                </tr>
+                <tr class="sub">
+                    <td class="center" colspan="4">
+                        <input type="submit" value="Gửi thông tin">
+                        <input type="reset" value="Nhập lại">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
