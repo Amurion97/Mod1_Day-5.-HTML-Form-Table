@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Table - Calendar</title>
+    <style>
+        .main {
+            margin: 0 auto;
+            border: 1px solid black;
+            width: 60%;
+            max-width: 600px;
+            padding: 10px 20px;
+            font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+        .center {
+            margin: 0 auto;
+        }
+        .text-center {
+            text-align: center;
+        }
+
+        #CN {
+            background-color: red;;
+        }
+
+        .wd {
+            background-color: orange;
+        }
+
+        .sat {
+            background-color: blue;
+        }
+
+        .vi {
+            color: white;
+        }
+
+        tr td:first-of-type {
+            color: red;
+        }
+        tr td:first-of-type sub{
+            color: black;
+        }
+
+        tr td:last-of-type {
+            color: blue;
+        }
+        tr td:first-of-type sub{
+            color: black;
+        }
+
+        .border-full {
+            border: 1px solid black;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="input center text-center" id="input">
+        <label for="day">Ngày 1 bắt đầu vào thứ: </label>
+        <select name="start-date" id="day">
+            <option value="c01">Sun</option>
+            <option value="c02">Mon</option>
+            <option value="c03">Tue</option>
+            <option value="c04">Wed</option>
+            <option value="c05">Thu</option>
+            <option value="c06">Fri</option>
+            <option value="c07">Sat</option>
+        </select>
+        <label for="lunar-date">1 là ngày âm</label>
+        <input type="number" id="lunar-date">
+        <input type="submit" id="submi">
+        <button id="submit">OK</button>
+    </div>
+    <div class="main center">
+        <p class="text-center">January 2023</p>
+        <table class="text-center">
+            <tr>
+                <th class="vi" id="CN">C.Nhật</th>
+                <th class="wd vi">T.Hai</th>
+                <th class="wd vi">T.Ba</th>
+                <th class="wd vi">T.Tư</th>
+                <th class="wd vi">T.Năm</th>
+                <th class="wd vi">T.Sáu</th>
+                <th class="sat vi">T.Bảy</th>
+            </tr>
+            <tr>
+                <td>Sun</td>
+                <td>Mon</td>
+                <td>Tue</td>
+                <td>Wed</td>
+                <td>Thu</td>
+                <td>Fri</td>
+                <td>Sat</td>
+            </tr>
+            <tr>
+                <td id="c01"></td>
+                <td id="c02"></td>
+                <td id="c03"></td>
+                <td id="c04"></td>
+                <td id="c05"></td>
+                <td id="c06"></td>
+                <td id="c07"></td>
+            </tr>
+            <tr>
+                <td id="c08"></td>
+                <td id="c09"></td>
+                <td id="c10"></td>
+                <td id="c11"></td>
+                <td id="c12"></td>
+                <td id="c13"></td>
+                <td id="c14"></td>
+            </tr>
+            <tr>
+                <td id="c15"></td>
+                <td id="c16"></td>
+                <td id="c17"></td>
+                <td id="c18"></td>
+                <td id="c19"></td>
+                <td id="c20"></td>
+                <td id="c21"></td>
+            </tr>
+            <tr>
+                <td id="c22"></td>
+                <td id="c23"></td>
+                <td id="c24"></td>
+                <td id="c25"></td>
+                <td id="c26"></td>
+                <td id="c27"></td>
+                <td id="c28"></td>
+            </tr>
+            <tr>
+                <td id="c29"></td>
+                <td id="c30"></td>
+                <td id="c31"></td>
+                <td id="c32"></td>
+                <td id="c33"></td>
+                <td id="c34"></td>
+                <td id="c35"></td>
+            </tr>
+            <tr>
+                <td id="c36"></td>
+                <td id="c37"></td>
+                <td id="c38"></td>
+                <td id="c39"></td>
+                <td id="c40"></td>
+                <td id="c41"></td>
+                <td id="c42"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="calendar.js"></script>
+</body>
+</html>
